@@ -1,6 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {FlatList} from 'react-navigation';
+import {Text, FlatList} from 'react-native';
 import withObservables from '@nozbe/with-observables';
 
 import Comment from '../components/Comment';

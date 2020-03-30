@@ -3,7 +3,7 @@
  */
 
 import 'react-native-gesture-handler';
-import {AppRegistry, NativeModules} from 'react-native';
+import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
 import {Database} from '@nozbe/watermelondb';
 import SQLiteAdapter from '@nozbe/watermelondb/adapters/sqlite';
@@ -26,8 +26,7 @@ const database = new Database({
   actionsEnabled: true,
 });
 
-const appStartedLaunchingAt = NativeModules.PerformancePlugin.appInitTimestamp;
-const timeToLaunch = new Date().getTime() - appStartedLaunchingAt;
+const timeToLaunch = new Date().getTime();
 
 const Navigation = createNavigation({database, timeToLaunch});
 
