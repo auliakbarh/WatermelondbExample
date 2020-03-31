@@ -1,13 +1,6 @@
 import React, {Component, Fragment} from 'react';
-import {
-  SafeAreaView,
-  Alert,
-  Text,
-  View,
-  Image,
-  TextInput,
-  ScrollView,
-} from 'react-native';
+import {SafeAreaView, Alert, Text, View, Image, TextInput} from 'react-native';
+import {ScrollView} from 'react-navigation';
 
 import {generate100, generate10k} from '../seeder/generate';
 import Button from '../components/Button';
